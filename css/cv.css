@@ -1,0 +1,234 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--text);
+}
+
+body {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--primary);
+}
+
+/* HEADER */
+
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--dark_accent);
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 15%;
+	position: fixed;
+}
+
+#navBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 0;
+	height: 80%;
+	/* background-color: hotpink; */
+	width: 100%;
+	border-right: 2px solid var(--accent);
+}
+
+.navBtn {
+	list-style-type: none;
+	/* background-color: blue; */
+	height: 12.5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.navBtn:hover {
+	background-color: var(--accent);
+}
+
+.navBtn:hover > li {
+	color: var(--dark_accent);
+}
+.navBtn > li {
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* MAIN */
+
+main {
+	display: flex;
+	flex-direction: column;
+	/* background-color: green; */
+	width: 80%;
+	align-items: center;
+	margin-left: 17%;
+}
+
+main > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 2px solid var(--accent);
+	width: 90%;
+}
+
+div#identite {
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+#infos {
+	width: 75%;
+}
+
+#infos > h1 {
+	font-size: 3em;
+}
+
+#infos > h2:last-child {
+	margin: 7% 0 5% 0;
+	text-decoration: underline;
+	color: var(--accent);
+}
+
+#infos > h2:nth-child(3) {
+	margin-top: 5%;
+}
+
+#photo {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 25%;
+	height: 100%;
+}
+
+#photo > div {
+	width: 70%;
+	height: 60%;
+}
+
+#photo img {
+	width: 100%;
+	height: 100%;
+}
+
+.school {
+	border: 2px solid var(--accent2);
+	width: 80%;
+	padding: 0 2%;
+	margin: 2% 0;
+}
+
+#competences > #content {
+	display: flex;
+	width: 80%;
+	margin-bottom: 2%;
+}
+
+#competences h3 {
+	text-decoration: underline;
+}
+
+#competences li > i {
+	color: var(--accent);
+}
+
+#content > div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+}
+
+#content > div:first-child {
+	border-right: 1px solid var(--accent2);
+}
+#content > div:last-child {
+	border-left: 1px solid var(--accent2);
+}
+
+#portfolio > .content {
+	display: flex;
+	width: 75%;
+	flex-wrap: wrap;
+	margin-bottom: 2%;
+}
+
+.project {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project:first-child {
+	border-right: 1px solid var(--accent2);
+	border-bottom: 1px solid var(--accent2);
+}
+
+.project:nth-child(2) {
+	border-left: 1px solid var(--accent2);
+	border-bottom: 1px solid var(--accent2);
+}
+
+.project:nth-child(3) {
+	border-right: 1px solid var(--accent2);
+	border-top: 1px solid var(--accent2);
+}
+
+.project:last-child {
+	border-left: 1px solid var(--accent2);
+	border-top: 1px solid var(--accent2);
+}
+
+.project > h3 {
+	text-decoration: underline;
+}
+
+.project > p {
+	width: 70%;
+}
+
+.project > p > a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+.project > p > a:hover {
+	text-decoration: underline;
+}
+
+.project ul > li {
+	color: var(--accent);
+}
+
+.exp {
+	width: 70%;
+	border: 2px solid var(--accent2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2%;
+}
+
+.exp > p {
+	width: 70%;
+}
+
+#interests {
+	border-bottom: none;
+}
